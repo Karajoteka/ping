@@ -1,0 +1,179 @@
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 340px;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+header .logo {
+  width: 60px;
+}
+
+.info {
+  margin-bottom: 30px;
+}
+
+.info h1 {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+
+.info h1 span {
+  font-weight: 300;
+  color: var(--gray);
+}
+
+.info p {
+  font-size: 1.2rem;
+}
+
+form {
+  width: 100%;
+  padding: 0 30px 0;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  height: 40px;
+  padding-left: 25px;
+  border-radius: 20px;
+  border-color: var(--gray);
+  margin-bottom: 5px;
+}
+
+form input::placeholder {
+  color: var(--gray);
+}
+
+form .error-message {
+  color: var(--light-red);
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+form button {
+  height: 40px;
+  margin-top: 10px;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 5px 10px var(--gray);
+}
+
+form button:hover {
+  cursor: pointer;
+}
+
+.main-image {
+  margin-bottom: 100px;
+}
+
+.main-image img {
+  width: 330px;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.icons-container .social-media-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  padding: 20px;
+  border: 1px solid var(--gray);
+  border-radius: 100%;
+}
+
+.icons-container .social-media-icon:hover {
+  cursor: pointer;
+  background-color: var(--blue);
+  border: none;
+}
+
+.icons-container .facebook {
+  background-image: url(./images/icons/facebook-blue.png);
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icons-container .facebook:hover {
+  background-image: url(./images/icons/facebook-white.png);
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icons-container .twitter {
+  background-image: url(./images/icons/twitter-blue.png);
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icons-container .twitter:hover {
+  background-image: url(./images/icons/twitter-white.png);
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icons-container .instagram {
+  background-image: url(./images/icons/instagram-blue.png);
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icons-container .instagram:hover {
+  background-image: url(./images/icons/instagram-white.png);
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer p {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: var(--gray);
+}
+
+
+.inactive {
+  /* display: none; */
+}
