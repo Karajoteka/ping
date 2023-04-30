@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./desktop.css" media="(min-width: 1100px)">
   <title>Ping</title>
 </head>
 <body>
@@ -24,8 +25,10 @@
     </div>
 
     <form action="submit">
-      <input type="text" placeholder="Your email address...">
-      <p class="error-message inactive">Please provide a valid email address</p>
+      <div class="input">
+        <input type="text" placeholder="Your email address...">
+        <p class="error-message inactive">Please provide a valid email address</p>
+      </div>
       <button>Notify Me</button>
     </form>
 
